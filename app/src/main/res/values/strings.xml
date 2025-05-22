@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidStructure</string>
+    <string name="hello_kotlin">Run Now</string>
+    <string name="run_coroutine">Run Coroutines</string>
+    <string name="run_program">Run Program</string>
+    <string name="tv_output">Output</string>
+    <string name="tv_coroutine_output">Coroutines Output</string>
+    <string name="tv_program_output">Program Output</string>
+    <string name="tvOut">%1$s::%2$s</string>
+    <string name="btn_next">Next</string>
+</resources>
