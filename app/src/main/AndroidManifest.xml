@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AndroidStructure"
         tools:targetApi="31">
         <activity
-            android:name=".CoroutineActivity"
+            android:name=".assignment.JavaPrograms"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"/>
-        <activity android:name=".assignment.JavaPrograms"/>
+        <activity android:name=".CoroutineActivity"/>
     </application>
 
 </manifest>

@@ -1,17 +1,21 @@
 package com.mayank.androidstructure.assignment.factorypattern
 
-class Laptop(name: String, brand: String, price: Int) {
-
-    object Factory {
-        private var instanceLaptop: Laptop? = null
-
-        fun create(name: String, brand: String, price: Int): Laptop {
-            if (instanceLaptop == null){
-                instanceLaptop = Laptop(name, brand, price)
+class Laptop private constructor(
+    val name: String,
+    val model: String,
+    val price: Int
+) {
+    companion object Factory {
+        private var laptopInstance: Laptop? = null
+        fun create(
+            name: String,
+            model: String,
+            price: Int
+        ): Laptop {
+            if (laptopInstance == null) {
+                laptopInstance = Laptop(name, model, price)
             }
-            return instanceLaptop!!
+            return laptopInstance!!
         }
     }
-
-    val mInstance = Factory.create("Think Pad", "Lenovo", 30000)
 }
